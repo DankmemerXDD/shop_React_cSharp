@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "name": "Ananas",
+        "price": 10,
+        "imagegUrl": "/images/ananas.webp"
+    },
+    {
+        "id": 2,
+        "name": "Appelsin",
+        "price": 10,
+        "imagegUrl": "images/appelsin.webp"
+    },
+    {
+        "id": 3,
+        "name": "Druer",
+        "price": 10,
+        "imagegUrl": "images/druer.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Eple",
+        "price": 10,
+        "imagegUrl": "images/kiwi.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Vannmelon",
+        "price": 10,
+        "imagegUrl": "images/vannmelon.webp"
+    }
+
+]
