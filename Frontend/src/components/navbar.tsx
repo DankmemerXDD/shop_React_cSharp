@@ -1,7 +1,9 @@
 import { Button, Container, Nav, Navbar as NavbarBootStrap } from "react-bootstrap"
 import { NavLink } from "react-router-dom"
+import { useShoppingCart } from "../context/ShoppingCartContext"
 
 export function Navbar() {
+    const { openCart, cartQuantity } = useShoppingCart()
     return (
         <NavbarBootStrap sticky="top" className="py-3 fs-3 bg-light">
             <Container>
@@ -16,7 +18,9 @@ export function Navbar() {
                         Store
                     </Nav.Link>
                 </Nav>
-                <Button style={{ width: "3rem", height: "3rem", position: "relative" }}
+                {cartQuantity > 0 && (
+                <Button onClick={openCart}
+                    style={{ width: "3rem", height: "3rem", position: "relative" }}
                     variant="outline-primary" className="rounded-circle">
                     <svg
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d={
@@ -27,25 +31,24 @@ export function Navbar() {
                         0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 
                         0 96 48 48 0 1 1 0-96z`} />
                     </svg>
-                    <div 
-                    className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
-                    style={{
-                        color: "white", 
-                        width: "1rem", 
-                        height: "1rem", 
-                        position: "relative",
-                        bottom: 0,
-                        right: 0,
-                        fontSize: 15,
-                        transform: "translate(-25%, -25%)",
+                    <div
+                        className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
+                        style={{
+                            color: "white",
+                            width: "1rem",
+                            height: "1rem",
+                            position: "relative",
+                            bottom: 0,
+                            right: 0,
+                            fontSize: 15,
+                            transform: "translate(-25%, -25%)",
                         }}>
-                        3
+                        {cartQuantity}
                     </div>
                 </Button>
+    )}
             </Container>
         </NavbarBootStrap>
-
-
 
     )
 }
