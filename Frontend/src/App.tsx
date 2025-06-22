@@ -10,6 +10,7 @@ import { Navbar } from "./components/Navbar"
 function App() {
   return (
     <>
+    <ShoppingCartProvider>
     <Navbar />
     <Container className="container">
       <Routes>
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about" element={<About/>}/>
       </Routes>
     </Container>
+    </ShoppingCartProvider>
     </>
   )
 }

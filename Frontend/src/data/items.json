@@ -3,31 +3,36 @@
         "id": 1,
         "name": "Ananas",
         "price": 10,
-        "imagegUrl": "/images/ananas.webp"
+        "imageUrl": "images/ananas.webp"
     },
     {
         "id": 2,
         "name": "Appelsin",
         "price": 10,
-        "imagegUrl": "images/appelsin.webp"
+        "imageUrl": "images/appelsin.webp"
     },
     {
         "id": 3,
         "name": "Druer",
         "price": 10,
-        "imagegUrl": "images/druer.jpg"
+        "imageUrl": "images/druer.jpg"
     },
     {
         "id": 4,
         "name": "Eple",
         "price": 10,
-        "imagegUrl": "images/kiwi.jpg"
+        "imageUrl": "images/eple.webp"
     },
     {
         "id": 5,
         "name": "Vannmelon",
         "price": 10,
-        "imagegUrl": "images/vannmelon.webp"
+        "imageUrl": "images/vannmelon.webp"
+    },
+    {
+        "id": 6,
+        "name": "Kiwi",
+        "price": 10,
+        "imageUrl": "images/kiwi.webp"
     }
-
 ]

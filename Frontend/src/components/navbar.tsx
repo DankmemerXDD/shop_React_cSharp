@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 
 export function Navbar() {
     return (
-        <NavbarBootStrap sticky="top" className="navBackground">
+        <NavbarBootStrap sticky="top" className="py-3 fs-3 bg-light">
             <Container>
                 <Nav className="marginAuto">
                     <Nav.Link to={"/"} as={NavLink}>
