@@ -29,5 +29,4 @@ export function ShoppingCart( {isOpen} : ShoppingCartProps){
                 </Stack>
             </Offcanvas.Body>
     </Offcanvas>
-
 }
